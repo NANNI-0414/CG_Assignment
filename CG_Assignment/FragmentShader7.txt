@@ -1,0 +1,11 @@
+#version 400 core
+
+out vec3 color;
+
+void main()
+{
+	vec2 diff = gl_PointCoord - vec2(0.5, 0.5); 
+	if (length(diff) > 0.5) discard; 
+	color = vec3(1, 1, 0);
+
+}

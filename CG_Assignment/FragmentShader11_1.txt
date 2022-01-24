@@ -1,0 +1,13 @@
+#version 400 core
+
+//Gouraud Shading Version
+
+in vec3 LightingColor;
+uniform vec3 objectColor;
+
+void main()
+{
+	gl_FragColor =  vec4(LightingColor * objectColor, 1.0);
+}
+
+

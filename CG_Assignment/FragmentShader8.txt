@@ -1,0 +1,12 @@
+#version 400 core
+
+
+//out vec4 oColor;
+in vec4 vColor;
+
+void main()
+{
+	gl_FragColor = vColor;
+
+}
+

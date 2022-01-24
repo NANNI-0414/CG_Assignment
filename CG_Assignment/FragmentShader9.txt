@@ -1,0 +1,22 @@
+
+#version 400 core
+
+//out vec4 oColor;
+in vec4 vColor;
+
+void main()
+{
+	gl_FragColor = vColor;
+
+}
+/*
+#version 400 core
+
+in vec3 fragCol; //VertexShader로 부터 fragCol변수 값을 받음
+out vec3 color;
+
+void main()
+{
+ color = fragCol; //이제는 color 정보를 직접 받아 색을 칠할 것
+}
+*/
